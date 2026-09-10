@@ -1,0 +1,18 @@
+/* Design tokens — identidade agro/tech */
+:root {
+  --green-900: #0c2e1f;
+  --green-800: #123f2a;
+  --green-700: #1a5c3a;
+  --green-600: #22804d;
+  --green-100: #dcefe2;
+  --lime: #c8f04a;
+  --amber: #ffb020;
+  --red: #e5484d;
+  --paper: #faf8f1;
+  --white: #ffffff;
+  --ink: #14201a;
+  --muted: #5c6f63;
+  --line: #e3ddcc;
+  --radius: 14px;
+  --shadow: 0 10px 30px rgba(12, 46, 31, 0.12);
+}

@@ -1,0 +1,67 @@
+/* Botões, cards, badges, tabelas */
+.btn {
+  display: inline-block;
+  padding: 0.8rem 1.6rem;
+  border-radius: 999px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.btn-primary { background: var(--lime); color: var(--green-900); }
+.btn-primary:hover { transform: translateY(-2px); box-shadow: var(--shadow); }
+.btn-ghost {
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  color: #fff;
+}
+.btn-ghost:hover { border-color: #fff; }
+.card {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  box-shadow: var(--shadow);
+}
+.card h3 { margin: 0 0 0.5rem; }
+.badge {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.3rem 0.8rem;
+  border-radius: 999px;
+}
+.badge-live { background: var(--lime); color: var(--green-900); }
+.badge-dark { background: var(--green-900); color: #fff; }
+.badge-warn { background: var(--amber); color: var(--green-900); }
+.grid-2 { display: grid; gap: 1.25rem; grid-template-columns: 1fr; }
+.grid-3 { display: grid; gap: 1.25rem; grid-template-columns: 1fr; }
+.grid-4 { display: grid; gap: 1rem; grid-template-columns: 1fr 1fr; }
+@media (min-width: 860px) {
+  .grid-2 { grid-template-columns: 1fr 1fr; }
+  .grid-3 { grid-template-columns: 1fr 1fr 1fr; }
+  .grid-4 { grid-template-columns: repeat(4, 1fr); }
+}
+table.spec { width: 100%; border-collapse: collapse; font-size: 0.92rem; }
+table.spec th, table.spec td {
+  text-align: left;
+  padding: 0.7rem 0.8rem;
+  border-bottom: 1px solid var(--line);
+}
+table.spec th { background: var(--green-900); color: #fff; }
+table.spec th:first-child { border-radius: 10px 0 0 0; }
+table.spec th:last-child { border-radius: 0 10px 0 0; }
+.reveal { opacity: 0; transform: translateY(18px); transition: opacity 0.5s ease, transform 0.5s ease; }
+.reveal.visible { opacity: 1; transform: none; }
+.alert-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 0.25rem 0.7rem;
+  border-radius: 999px;
+}
+.alert-ok { background: #dff5e3; color: var(--green-800); }
+.alert-warn { background: #fff0d6; color: #8a5a00; }
+.alert-danger { background: #ffe0e1; color: #a02025; }
