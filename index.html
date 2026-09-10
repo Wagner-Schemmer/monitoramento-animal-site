@@ -182,10 +182,22 @@
     <div class="wrap">
       <h2 class="section-title reveal">Vamos construir juntos?</h2>
       <p class="section-sub reveal">Buscamos parceria com fazendas, universidades e orientadores para validação em campo — e gente boa para firmware, ML e backend.</p>
-      <div class="card reveal">
-        <h3>Contato da pesquisa</h3>
-        <p>📧 <a href="mailto:wagner.schemmer.martins1@gmail.com">wagner.schemmer.martins1@gmail.com</a><br>💻 <a href="https://github.com/Wagner-Schemmer" target="_blank" rel="noreferrer">github.com/Wagner-Schemmer</a></p>
-        <div class="tag-row"><span class="tag">Compost Barn</span><span class="tag">Freestall</span><span class="tag">ESP8266</span><span class="tag">MPU6050</span><span class="tag">TinyML</span></div>
+      <div class="grid-2">
+        <div class="card reveal">
+          <h3>Contato da pesquisa</h3>
+          <p>📧 <a href="mailto:wagner.schemmer.martins1@gmail.com">wagner.schemmer.martins1@gmail.com</a><br>💻 <a href="https://github.com/Wagner-Schemmer" target="_blank" rel="noreferrer">github.com/Wagner-Schemmer</a></p>
+          <div class="tag-row"><span class="tag">Compost Barn</span><span class="tag">Freestall</span><span class="tag">ESP8266</span><span class="tag">MPU6050</span><span class="tag">TinyML</span></div>
+        </div>
+        <div class="card reveal">
+          <h3>Envie uma mensagem</h3>
+          <form id="contact-form">
+            <p style="margin:0 0 .6rem"><input name="name" placeholder="Seu nome" required style="width:100%;padding:.7rem;border:1px solid var(--line);border-radius:10px" /></p>
+            <p style="margin:0 0 .6rem"><input name="email" type="email" placeholder="Seu e-mail" required style="width:100%;padding:.7rem;border:1px solid var(--line);border-radius:10px" /></p>
+            <p style="margin:0 0 .6rem"><textarea name="message" placeholder="Sou produtor / pesquisador / estudante..." required rows="4" style="width:100%;padding:.7rem;border:1px solid var(--line);border-radius:10px"></textarea></p>
+            <button class="btn btn-primary" type="submit" style="border:none;cursor:pointer">Enviar</button>
+            <p id="contact-status" style="font-size:.85rem;color:var(--muted)"></p>
+          </form>
+        </div>
       </div>
     </div>
   </section>
@@ -198,5 +210,6 @@
   </footer>
 
   <script src="js/main.js" defer></script>
+  <script src="js/contact.js" defer></script>
 </body>
 </html>
