@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard do Rebanho — RebanhoVivo</title>
+  <meta name="description" content="Status do rebanho em tempo real: dispositivos, telemetria e alertas." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="index.html">🐄 Rebanho<span>Vivo</span> <small style="font-weight:400;color:#9dbfa9">/ dashboard</small></a>
+      <div class="nav-links">
+        <a href="index.html#como-funciona">Como funciona</a>
+        <a href="index.html#roadmap">Roadmap</a>
+        <a href="index.html#contato">Contato</a>
+      </div>
+      <span class="alert-chip alert-danger" id="api-status">○ conectando...</span>
+    </div>
+  </nav>
+
+  <section>
+    <div class="wrap">
+      <h2 class="section-title">Dashboard do rebanho</h2>
+      <p class="section-sub">Dados ao vivo da API (<code id="api-url-label">http://localhost:3001</code>). Atualiza a cada 15 s. Para apontar ao gateway, edite <code>js/config.js</code>.</p>
+      <div class="grid-2">
+        <div>
+          <h3>Animais</h3>
+          <div id="device-list" class="grid-2"></div>
+        </div>
+        <div>
+          <h3>Telemetria — <span id="telemetry-count">—</span></h3>
+          <div class="demo-panel">
+            <canvas id="telemetry-chart" width="900" height="240"></canvas>
+            <p style="font-size:.8rem;color:#bcd6c4">Linha vermelha = limiar de rajada (1,8 g). Linha verde = magnitude do acelerômetro.</p>
+          </div>
+        </div>
+      </div>
+      <h3 style="margin-top:2rem">Alertas — <span id="alert-count">—</span></h3>
+      <div id="alert-list"></div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap" style="display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap">
+      <span>🐄 RebanhoVivo — dashboard (lê da API do backend).</span>
+      <a href="index.html">Voltar ao site ↑</a>
+    </div>
+  </footer>
+
+  <script src="js/config.js"></script>
+  <script src="js/dashboard.js" defer></script>
+</body>
+</html>
