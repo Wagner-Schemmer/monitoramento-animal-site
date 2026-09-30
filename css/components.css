@@ -65,3 +65,10 @@ table.spec th:last-child { border-radius: 0 10px 0 0; }
 .alert-ok { background: #dff5e3; color: var(--green-800); }
 .alert-warn { background: #fff0d6; color: #8a5a00; }
 .alert-danger { background: #ffe0e1; color: #a02025; }
+
+/* DataBov additions */
+.brand { display: inline-flex; align-items: center; gap: .5rem; }
+.brand-logo { height: 38px; width: auto; border-radius: 8px; }
+details.card summary { cursor: pointer; font-weight: 700; }
+details.card summary::-webkit-details-marker { color: var(--green-600); }
+details.card p { margin: .6rem 0 0; }

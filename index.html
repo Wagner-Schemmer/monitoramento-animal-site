@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Coleira Inteligente — Monitoramento de Gado Leiteiro | Compost Barn &amp; Freestall</title>
-  <meta name="description" content="Sistema de monitoramento animal para gado leiteiro em confinamento: coleira com IMU, classificação comportamental, detecção de cio e alertas em tempo real." />
+  <title>DataBov — Bem-Estar Animal Monitorado e Certificado | Compost Barn &amp; Freestall</title>
+  <meta name="description" content="Coleira inteligente com IA: comportamento, saúde e conforto do rebanho 24h + índice de bem-estar certificável de 1 a 5. Para Compost Barn e Freestall." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
@@ -15,33 +15,31 @@
 <body>
   <nav class="nav">
     <div class="nav-inner">
-      <a class="brand" href="#top">🐄 Rebanho<span>Vivo</span> <small style="font-weight:400;color:#9dbfa9">/ pesquisa</small></a>
+      <a class="brand" href="#top"><img src="assets/databov-logo.png" alt="DataBov" class="brand-logo" onerror="this.remove()">Data<span>Bov</span></a>
       <div class="nav-links">
+        <a href="#solucao">Solução</a>
         <a href="#como-funciona">Como funciona</a>
-        <a href="#arquitetura">Arquitetura</a>
-        <a href="#hardware">Hardware</a>
-        <a href="#energia">Energia</a>
-        <a href="#diferencial">Diferencial</a>
-        <a href="#roadmap">Roadmap</a>
+        <a href="#certificacao">Certificação</a>
+        <a href="#planos">Planos</a>
         <a href="dashboard.html">Dashboard</a>
       </div>
-      <a class="btn btn-primary" style="padding:.5rem 1.1rem;font-size:.85rem" href="#contato">Falar conosco</a>
+      <a class="btn btn-primary" style="padding:.5rem 1.1rem;font-size:.85rem" href="#contato">Solicite demonstração</a>
     </div>
   </nav>
 
   <header class="hero" id="top">
     <div class="wrap">
-      <span class="badge badge-live">● Projeto de pesquisa — protótipo ativo</span>
-      <h1>Coleira inteligente para <em>gado leiteiro</em> em confinamento</h1>
-      <p class="lead">Sensores no pescoço do animal classificam ruminação, alimentação, cio e estresse térmico — e geram alertas antes dos sintomas clínicos aparecerem. Desenhado para <strong>Compost Barn e Freestall</strong>.</p>
+      <span class="badge badge-live">● Compost Barn &amp; Freestall</span>
+      <h1>DataBov: Bem-Estar Animal <em>Monitorado e Certificado</em>, Direto da Coleira.</h1>
+      <p class="lead">Sensores inteligentes acompanham comportamento, saúde e conforto do seu rebanho <strong>24 horas por dia</strong> — com um índice de bem-estar certificável, de <strong>1 a 5</strong>.</p>
       <div class="hero-cta">
-        <a class="btn btn-primary" href="#demo">Ver demonstração</a>
-        <a class="btn btn-ghost" href="#roadmap">Acompanhar roadmap</a>
+        <a class="btn btn-primary" href="#contato">Solicite uma demonstração</a>
+        <a class="btn btn-ghost" href="#demo">Ver demonstração</a>
       </div>
       <div class="hero-meta">
-        <span>▸ Inspirado no Cowmed</span>
-        <span>▸ ESP8266 + MPU6050 no protótipo</span>
-        <span>▸ Wi-Fi / BLE no galpão</span>
+        <span>▸ Coleira IMU + temperatura IV</span>
+        <span>▸ IA comportamental</span>
+        <span>▸ Índice de bem-estar 1–5</span>
       </div>
     </div>
   </header>
@@ -49,22 +47,78 @@
   <div class="stats">
     <div class="stats-grid">
       <div class="stat"><b>24h</b>monitoramento contínuo por animal</div>
-      <div class="stat"><b>6+</b>comportamentos classificados</div>
+      <div class="stat"><b>5</b>estados comportamentais classificados</div>
       <div class="stat"><b>12–18h</b>janela de detecção de cio</div>
-      <div class="stat"><b>~25 dias</b>autonomia estimada (GPS sob demanda)</div>
+      <div class="stat"><b>1–5</b>índice de bem-estar certificável</div>
     </div>
   </div>
 
+  <section id="problema">
+    <div class="wrap">
+      <h2 class="section-title reveal">Bem-estar animal ainda é avaliado de forma pontual e subjetiva</h2>
+      <p class="section-sub reveal">A saúde e o conforto do rebanho dependem de observação visual esporádica — o que atrasa tudo e não comprova nada para cooperativas, frigoríficos ou exportadores.</p>
+      <div class="grid-2">
+        <div class="card reveal"><h3>⏰ Detecção tardia de cio</h3><p>Reduz a eficiência reprodutiva do rebanho: o momento ideal da inseminação passa sem ser visto.</p></div>
+        <div class="card reveal"><h3>🩺 Doença só quando aparece</h3><p>Claudicação e estresse térmico só são percebidos quando já estão visíveis — e caros.</p></div>
+        <div class="card reveal"><h3>📋 Sem padrão de certificação</h3><p>Não existe método contínuo e padronizado de comprovar bem-estar animal.</p></div>
+        <div class="card reveal"><h3>🌍 Pressão internacional</h3><p>As novas regras da União Europeia exigem rastreabilidade e bem-estar comprovados.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="solucao" class="dark">
+    <div class="wrap">
+      <h2 class="section-title reveal">Uma coleira inteligente que transforma comportamento em dados — e dados em decisão</h2>
+      <p class="section-sub reveal">Coleira de baixo custo com sensores de movimento e temperatura monitora cada animal continuamente. A IA classifica o que ele está fazendo — <strong>ruminando, se alimentando, descansando, em atividade ou em cio</strong> — e cruza os padrões para gerar alertas de saúde e o índice de bem-estar.</p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="#contato">Fale com um especialista DataBov</a>
+      </div>
+    </div>
+  </section>
+
   <section id="como-funciona">
     <div class="wrap">
-      <h2 class="section-title reveal">Do movimento ao alerta em 5 etapas</h2>
-      <p class="section-sub reveal">O acelerômetro e o giroscópio captam o movimento do pescoço; o algoritmo traduz em comportamento e o sistema avisa o produtor.</p>
+      <h2 class="section-title reveal">Do sensor à certificação em 4 etapas</h2>
       <div class="pipeline">
-        <div class="pipe-step reveal"><small>01 · SENSOR</small><h3>Coleira com IMU</h3><p>Acelerômetro + giroscópio (MPU6050) no pescoço, com interrupção por movimento.</p></div>
-        <div class="pipe-step reveal"><small>02 · TRANSMISSÃO</small><h3>Wi-Fi / BLE</h3><p>No galpão, gateway fixo ligado à rede elétrica recebe os pacotes.</p></div>
-        <div class="pipe-step reveal"><small>03 · INGESTÃO</small><h3>MQTT + séries temporais</h3><p>Backend recebe via MQTT e grava em banco de séries temporais.</p></div>
-        <div class="pipe-step reveal"><small>04 · ML</small><h3>Classificação</h3><p>Features em janelas de tempo → ruminando, comendo, andando, deitada.</p></div>
-        <div class="pipe-step reveal"><small>05 · ALERTA</small><h3>Dashboard + push</h3><p>Cio, anomalia de saúde e estresse térmico direto no celular.</p></div>
+        <div class="pipe-step reveal"><small>01 · SENSOR</small><h3>Coleira capta tudo</h3><p>Movimento (IMU) e temperatura corporal continuamente, no pescoço do animal.</p></div>
+        <div class="pipe-step reveal"><small>02 · INTELIGÊNCIA ARTIFICIAL</small><h3>Classifica o comportamento</h3><p>Estados comportamentais comparados ao padrão do próprio animal.</p></div>
+        <div class="pipe-step reveal"><small>03 · ALERTAS</small><h3>Cio, doença e estresse</h3><p>Identificação em tempo real, direto no dashboard e no celular.</p></div>
+        <div class="pipe-step reveal"><small>04 · CERTIFICAÇÃO</small><h3>Índice 1 a 5</h3><p>Indicadores combinados num score auditável de bem-estar.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="funcionalidades" class="dark">
+    <div class="wrap">
+      <h2 class="section-title reveal">Funcionalidades principais</h2>
+      <div class="grid-3">
+        <div class="card reveal"><h3>🔥 Detecção de cio</h3><p>Padrão de monta em rajadas ao longo de 12–18h para acertar o momento da inseminação.</p></div>
+        <div class="card reveal"><h3>🐄 Classificação 24h</h3><p>Ruminação, alimentação, descanso e atividade, o dia inteiro, por animal.</p></div>
+        <div class="card reveal"><h3>🌡️ Estresse térmico</h3><p>Temperatura infravermelha sem contato cruzada com comportamento.</p></div>
+        <div class="card reveal"><h3>❤️ Sinais vitais</h3><p>Indicadores de frequência cardíaca e respiratória no cálculo de estresse.</p></div>
+        <div class="card reveal"><h3>🏅 Índice 1–5</h3><p>Score objetivo em 4 domínios científicos. <a href="#certificacao">Ver como funciona ↓</a></p></div>
+        <div class="card reveal"><h3>🔔 Alertas realtime</h3><p>Dashboard web/mobile com notificações na hora.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="certificacao">
+    <div class="wrap">
+      <h2 class="section-title reveal">O primeiro selo de bem-estar gerado de dados reais — não de checklist</h2>
+      <p class="section-sub reveal">Quatro domínios validados pela literatura, comparados às faixas da espécie e ao histórico individual, calibrados contra observador treinado. Defensável perante cooperativas, frigoríficos e exportadores.</p>
+      <div class="card reveal" style="overflow-x:auto">
+        <table class="spec">
+          <tr><th>Domínio</th><th>O que mede</th></tr>
+          <tr><td>Conforto</td><td>Tempo de descanso (deitada) por dia</td></tr>
+          <tr><td>Alimentação</td><td>Tempo de ruminação por dia</td></tr>
+          <tr><td>Saúde</td><td>Atividade e marcha (indícios de claudicação)</td></tr>
+          <tr><td>Comportamento natural</td><td>Ausência de padrões anômalos ou repetitivos</td></tr>
+        </table>
+      </div>
+      <div class="card reveal" style="margin-top:1.25rem;text-align:center">
+        <h3>Escala DataBov</h3>
+        <p style="font-size:2rem;letter-spacing:.2rem">1️⃣ 2️⃣ 3️⃣ 4️⃣ 5️⃣</p>
+        <p>De <strong>1 (crítico)</strong> a <strong>5 (excelente)</strong> — score ponderado por domínio.</p>
       </div>
     </div>
   </section>
@@ -92,109 +146,68 @@
     </div>
   </section>
 
-  <section id="arquitetura">
+  <section id="diferenciais">
     <div class="wrap">
-      <h2 class="section-title reveal">Arquitetura em 5 camadas</h2>
-      <p class="section-sub reveal">Do edge ao celular do produtor.</p>
+      <h2 class="section-title reveal">Diferenciais competitivos</h2>
       <div class="grid-2">
-        <div class="card reveal"><span class="badge badge-dark">Edge</span><h3>1 · Sensoriamento</h3><p>IMU + microcontrolador de baixo consumo (ESP32/nRF52 na versão final; ESP8266 na bancada). Pino INT para wake-on-motion.</p><div class="tag-row"><span class="tag">MPU6050</span><span class="tag">DMP</span><span class="tag">INT</span></div></div>
-        <div class="card reveal"><span class="badge badge-dark">Rede</span><h3>2 · Comunicação</h3><p>Wi-Fi ou BLE no galpão com gateway fixo. LoRa fica reservado a um eventual modo pasto.</p><div class="tag-row"><span class="tag">Wi-Fi</span><span class="tag">BLE</span><span class="tag">Gateway AC</span></div></div>
-        <div class="card reveal"><span class="badge badge-dark">Dados</span><h3>3 · Ingestão e armazenamento</h3><p>MQTT para pacotes leves; InfluxDB/TimescaleDB para séries temporais com timestamp.</p><div class="tag-row"><span class="tag">MQTT</span><span class="tag">InfluxDB</span><span class="tag">TimescaleDB</span></div></div>
-        <div class="card reveal"><span class="badge badge-dark">ML</span><h3>4 · Processamento</h3><p>Features estatísticas por janela → Random Forest (baseline) → anomalia vs. histórico do próprio animal. Evolução: CNN podada em microcontrolador.</p><div class="tag-row"><span class="tag">Random Forest</span><span class="tag">FFT</span><span class="tag">TinyML</span></div></div>
-      </div>
-      <div class="card reveal" style="margin-top:1.25rem"><span class="badge badge-dark">App</span><h3>5 · Aplicação</h3><p>Dashboard com status do rebanho, histórico por animal e notificações push/SMS/e-mail para cio, saúde e estresse térmico.</p></div>
-    </div>
-  </section>
-
-  <section id="comportamentos" class="dark">
-    <div class="wrap">
-      <h2 class="section-title reveal">O que o sistema detecta</h2>
-      <p class="section-sub reveal">Assinaturas distintas no sinal do pescoço.</p>
-      <div class="grid-3">
-        <div class="card reveal"><h3>🐄 Ruminação</h3><p>Mastigação rítmica ~0,7–1,2 Hz captada por vibração transmitida pelo pescoço. Classificação de estado confiável.</p><span class="alert-chip alert-ok">● baseline validado</span></div>
-        <div class="card reveal"><h3>🌾 Alimentação</h3><p>Postura de cabeça baixa + movimento contínuo no cocho. Separa "comendo" de "parada".</p><span class="alert-chip alert-ok">● baseline validado</span></div>
-        <div class="card reveal"><h3>🔥 Cio (monta)</h3><p>Picos de alta amplitude em rajadas ao longo de 12–18h — a marca real do cio, não uma monta isolada.</p><span class="alert-chip alert-warn">● alerta prioritário</span></div>
-        <div class="card reveal"><h3>🌡️ Estresse térmico</h3><p>Ofegância e queda de ruminação/descanso. Gatilho para manejo do galpão.</p><span class="alert-chip alert-warn">● em validação</span></div>
-        <div class="card reveal"><h3>🚶 Claudicação</h3><p>Assimetria de marcha e menos tempo em pé — problema crítico em confinamento.</p><span class="alert-chip alert-warn">● em validação</span></div>
-        <div class="card reveal"><h3>😴 Repouso / decúbito</h3><p>Tempo deitada é indicador de conforto. Base do welfare score.</p><span class="alert-chip alert-ok">● baseline validado</span></div>
+        <div class="card reveal"><span class="badge badge-live">Exclusivo no Brasil</span><h3>Certificação, não só monitoramento</h3><p>Nenhum concorrente nacional oferece índice de bem-estar certificável — só saúde e produtividade.</p></div>
+        <div class="card reveal"><h3>Pronto p/ exportação</h3><p>Alinhado às exigências europeias de rastreabilidade e bem-estar a partir de setembro de 2026.</p></div>
+        <div class="card reveal"><h3>Feito p/ confinamento</h3><p>Arquitetura otimizada para Compost Barn e Freestall, sem custo de soluções de pasto aberto.</p></div>
+        <div class="card reveal"><h3>Hardware enxuto</h3><p>Sensores sob demanda multiplicam a autonomia e mantêm o custo acessível.</p></div>
       </div>
     </div>
   </section>
 
-  <section id="hardware">
+  <section id="para-quem" class="dark">
     <div class="wrap">
-      <h2 class="section-title reveal">Protótipo de bancada</h2>
-      <p class="section-sub reveal">Peças baratas e documentadas para validar a cadeia completa antes do hardware final.</p>
+      <h2 class="section-title reveal">Para quem é</h2>
       <div class="grid-2">
-        <div class="card reveal"><span class="badge badge-warn">MCU · bancada</span><h3>Wemos D1 Mini (ESP8266)</h3><p>Wi-Fi embutido, lê o IMU e envia à rede. Ideal para prototipar; o rádio final será BLE/baixo consumo.</p><table class="spec"><tr><th>Item</th><th>Detalhe</th></tr><tr><td>Tensão</td><td>3,3 V</td></tr><tr><td>Rádio</td><td>Wi-Fi (protótipo)</td></tr><tr><td>Papel</td><td>Leitura + transmissão</td></tr></table></div>
-        <div class="card reveal"><span class="badge badge-warn">Sensor · 6 eixos</span><h3>GY-521 (MPU6050)</h3><p>O mesmo tipo de IMU da literatura: acelerômetro + giroscópio, DMP com fusão pronta e pino INT para wake-on-motion.</p><table class="spec"><tr><th>Recurso</th><th>Uso no projeto</th></tr><tr><td>Acelerômetro XYZ</td><td>Inclinação + intensidade</td></tr><tr><td>Giroscópio XYZ</td><td>Rotação da cabeça</td></tr><tr><td>DMP</td><td>Orientação sem filtro próprio</td></tr><tr><td>Pino INT</td><td>Acorda o MCU no movimento</td></tr></table></div>
-      </div>
-      <div class="card reveal" style="margin-top:1.25rem"><h3>Limites conhecidos do MPU6050</h3><p>Sem magnetômetro (só orientação relativa); giroscópio com deriva (mitigada pelo DMP); temperatura interna é do chip, não do animal; <strong>fixação firme da coleira é crítica</strong> — folga gera ruído que mata a detecção.</p></div>
-    </div>
-  </section>
-
-  <section id="energia" class="dark">
-    <div class="wrap">
-      <h2 class="section-title reveal">Energia: o gargalo nº 1</h2>
-      <p class="section-sub reveal">Rádio e amostragem contínua comem bateria; GPS sempre ligado é o pior vilão. Números com capacidade realista.</p>
-      <div class="card reveal" style="overflow-x:auto">
-        <h3>Autonomia estimada (2× 18650 em paralelo, ~5.000 mAh reais)</h3>
-        <table class="spec">
-          <tr><th>Cenário de consumo</th><th>1 célula (~2.500 mAh)</th><th>2 células (~5.000 mAh)</th></tr>
-          <tr><td>0,5 mA — super otimizado</td><td>~208 dias</td><td>~416 dias</td></tr>
-          <tr><td>5 mA — uso normal, sem GPS contínuo</td><td>~20,8 dias</td><td>~41,7 dias</td></tr>
-          <tr><td>15 mA — rádio ativo frequente</td><td>~7 dias</td><td>~13,9 dias</td></tr>
-          <tr><td>50–100 mA — GPS + rádio sempre ligados</td><td>1–2 dias</td><td>2–4 dias</td></tr>
-        </table>
-        <p style="font-size:.9rem;color:#bcd6c4">⚠️ Células "6800 mAh" genéricas entregam 1.200–2.500 mAh reais. Sempre em <strong>paralelo</strong> (3,7 V), mesmo lote, com BMS obrigatório.</p>
-      </div>
-      <div class="grid-2" style="margin-top:1.25rem">
-        <div class="card reveal"><h3>GPS sob demanda (wake-on-motion)</h3><p>IMU em microampères vigia o movimento; só liga o GPS na atividade, com fixes a cada 30–60 s e histerese para desligar. Ganho estimado: <strong>~1,7 → ~25 dias</strong> (≈15×).</p></div>
-        <div class="card reveal"><h3>No galpão: RTLS via BLE</h3><p>Em área delimitada o GPS perde precisão e sentido. Beacons BLE fixos com triangulação por RSSI localizam dentro do barracão gastando muito menos.</p></div>
+        <div class="card reveal"><h3>🥛 Produtores de leite</h3><p>Compost Barn ou Freestall que querem cio no ponto e rebanho saudável.</p></div>
+        <div class="card reveal"><h3>🤝 Cooperativas</h3><p>Diferenciação por qualidade e bem-estar comprovado.</p></div>
+        <div class="card reveal"><h3>🥩 Frigoríficos e exportadores</h3><p>Rastreabilidade e conformidade para mercados exigentes.</p></div>
+        <div class="card reveal"><h3>🎓 Pesquisa e universidades</h3><p>Dados comportamentais contínuos para ciência.</p></div>
       </div>
     </div>
   </section>
 
-  <section id="diferencial">
+  <section id="planos">
     <div class="wrap">
-      <h2 class="section-title reveal">Por que este projeto importa</h2>
-      <p class="section-sub reveal">Concorrentes medem saúde e produtividade. O vácuo está em bem-estar e compliance.</p>
+      <h2 class="section-title reveal">Modelo de acesso</h2>
       <div class="grid-2">
-        <div class="card reveal"><span class="badge badge-live">Aposta principal</span><h3>Rastreabilidade + compliance UE</h3><p>A partir de setembro de 2026 a UE exige rastreabilidade total e geolocalização da cadeia da carne. Relatório automático de conformidade é uma janela regulatória ainda não explorada pelos players nacionais.</p></div>
-        <div class="card reveal"><h3>Welfare score + ESG</h3><p>Índice de bem-estar (ruminação, descanso, estresse térmico, variabilidade) com potencial em certificações para frigoríficos.</p></div>
-        <div class="card reveal"><h3>Baixo custo p/ pequeno produtor</h3><p>Hardware minimalista, gateway compartilhado entre vizinhos, assinatura acessível.</p></div>
-        <div class="card reveal"><h3>Edge AI p/ conectividade precária</h3><p>Classificação no microcontrolador (TinyML): menos rede, menos energia, funciona no campo.</p></div>
+        <div class="card reveal"><h3>📦 Hardware</h3><p>Aquisição da coleira DataBov por animal.</p></div>
+        <div class="card reveal"><h3>🔁 Assinatura mensal</h3><p>Dashboard, alertas em tempo real e relatórios.</p></div>
+        <div class="card reveal"><h3>🏅 Certificação</h3><p>Relatório de bem-estar para compliance e exportação.</p></div>
+        <div class="card reveal"><h3>📊 Dados agregados <small>(opcional)</small></h3><p>Licenciamento anonimizado para pesquisa e indústria.</p></div>
       </div>
     </div>
   </section>
 
-  <section id="roadmap" class="dark">
+  <section id="tecnica" class="dark">
     <div class="wrap">
-      <h2 class="section-title reveal">Roadmap — o que falta</h2>
-      <p class="section-sub reveal">Estado honesto do sistema, direto da Seção 9 do documento.</p>
-      <div class="grid-2">
-        <div class="card reveal"><h3>🔌 Hardware</h3><ul class="check"><li>☐ Rádio BLE de baixo consumo (ou LoRa se modo pasto)</li><li>☐ Beacons BLE p/ RTLS no galpão</li><li>☐ Gateway fixo ligado à rede elétrica</li><li>☐ Bateria 18650/LiPo + TP4056 + BMS + step-down 3,3 V</li><li>☐ Circuito INT (wake-on-motion)</li><li>☐ Invólucro anti-umidade + fixação na coleira</li></ul></div>
-        <div class="card reveal"><h3>💻 Software &amp; validação</h3><ul class="check"><li>☐ Firmware (leitura IMU + duty cycling + TX)</li><li>☐ Pipeline features + Random Forest</li><li>☐ Backend MQTT + banco de séries temporais</li><li>☐ Dashboard do rebanho</li><li>☐ Protocolo de dados rotulados (filmagem)</li><li>☐ Parceria p/ acesso a animais</li></ul></div>
-      </div>
+      <h2 class="section-title reveal">Especificações técnicas</h2>
+      <details class="card reveal"><summary><strong>Sensores</strong></summary><p>IMU 6 eixos (acelerômetro + giroscópio) · temperatura infravermelha sem contato · indicadores de frequência cardíaca e respiratória.</p></details>
+      <details class="card reveal"><summary><strong>Conectividade</strong></summary><p>Wi-Fi/BLE para Compost Barn e Freestall · estação base na rede elétrica da propriedade.</p></details>
+      <details class="card reveal"><summary><strong>Energia</strong></summary><p>Bateria recarregável com gestão inteligente; localização só sob demanda, multiplicando a autonomia.</p></details>
+      <details class="card reveal"><summary><strong>Inteligência Artificial</strong></summary><p>ML validado com literatura de pecuária de precisão; anomalias vs. histórico individual de cada animal.</p></details>
     </div>
   </section>
 
   <section id="contato">
     <div class="wrap">
-      <h2 class="section-title reveal">Vamos construir juntos?</h2>
-      <p class="section-sub reveal">Buscamos parceria com fazendas, universidades e orientadores para validação em campo — e gente boa para firmware, ML e backend.</p>
+      <h2 class="section-title reveal">Leve o bem-estar do seu rebanho para o próximo nível — com dados, não achismo</h2>
+      <p class="section-sub reveal">Converse com a equipe DataBov e veja como aplicar monitoramento contínuo e certificação na sua propriedade.</p>
       <div class="grid-2">
         <div class="card reveal">
-          <h3>Contato da pesquisa</h3>
+          <h3>Fale com a gente</h3>
           <p>📧 <a href="mailto:wagner.schemmer.martins1@gmail.com">wagner.schemmer.martins1@gmail.com</a><br>💻 <a href="https://github.com/Wagner-Schemmer" target="_blank" rel="noreferrer">github.com/Wagner-Schemmer</a></p>
-          <div class="tag-row"><span class="tag">Compost Barn</span><span class="tag">Freestall</span><span class="tag">ESP8266</span><span class="tag">MPU6050</span><span class="tag">TinyML</span></div>
+          <div class="tag-row"><span class="tag">Compost Barn</span><span class="tag">Freestall</span><span class="tag">Demonstração</span></div>
         </div>
         <div class="card reveal">
-          <h3>Envie uma mensagem</h3>
+          <h3>Quero uma demonstração</h3>
           <form id="contact-form">
             <p style="margin:0 0 .6rem"><input name="name" placeholder="Seu nome" required style="width:100%;padding:.7rem;border:1px solid var(--line);border-radius:10px" /></p>
             <p style="margin:0 0 .6rem"><input name="email" type="email" placeholder="Seu e-mail" required style="width:100%;padding:.7rem;border:1px solid var(--line);border-radius:10px" /></p>
-            <p style="margin:0 0 .6rem"><textarea name="message" placeholder="Sou produtor / pesquisador / estudante..." required rows="4" style="width:100%;padding:.7rem;border:1px solid var(--line);border-radius:10px"></textarea></p>
+            <p style="margin:0 0 .6rem"><textarea name="message" placeholder="Sou produtor / cooperativa / frigorífico..." required rows="4" style="width:100%;padding:.7rem;border:1px solid var(--line);border-radius:10px"></textarea></p>
             <button class="btn btn-primary" type="submit" style="border:none;cursor:pointer">Enviar</button>
             <p id="contact-status" style="font-size:.85rem;color:var(--muted)"></p>
           </form>
@@ -205,7 +218,7 @@
 
   <footer>
     <div class="wrap" style="display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap">
-      <span>🐄 RebanhoVivo — pesquisa em monitoramento animal (documento de referência, 10 seções).</span>
+      <span>🐄 DataBov — bem-estar monitorado e certificado.</span>
       <a href="#top">Voltar ao topo ↑</a>
     </div>
   </footer>
