@@ -1,4 +1,4 @@
--- RebanhoVivo site — rode no SQL Editor do Supabase
+-- DataBov site — rode no SQL Editor do Supabase
 create table if not exists contacts (
   id bigint generated always as identity primary key,
   created_at timestamptz default now(),
