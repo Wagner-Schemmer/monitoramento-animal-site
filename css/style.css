@@ -98,3 +98,6 @@ footer a { color: var(--lime); }
 .check li { margin-bottom: 0.5rem; }
 .tag-row { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: 0.8rem; }
 .tag { font-size: 0.75rem; background: var(--green-100); color: var(--green-800); padding: 0.2rem 0.7rem; border-radius: 999px; font-weight: 700; }
+
+/* Âncoras: compensa o nav fixo */
+section[id], header[id] { scroll-margin-top: 76px; }
