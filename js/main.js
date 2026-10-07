@@ -85,3 +85,17 @@ if (ctx) {
   setBehavior("ruminando");
   requestAnimationFrame(draw);
 }
+
+// ---- Voltar ao topo (garantido por JS, com fallback) ----
+document.querySelectorAll('a[href="#top"]').forEach((a) => {
+  a.addEventListener("click", (e) => {
+    const el = document.getElementById("top");
+    if (!el) return;
+    e.preventDefault();
+    try {
+      el.scrollIntoView({ behavior: "smooth", block: "start" });
+    } catch {
+      window.scrollTo(0, 0);
+    }
+  });
+});
