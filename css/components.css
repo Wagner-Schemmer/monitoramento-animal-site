@@ -69,6 +69,7 @@ table.spec th:last-child { border-radius: 0 10px 0 0; }
 /* DataBov additions */
 .brand { display: inline-flex; align-items: center; gap: .5rem; }
 .brand-logo { height: 38px; width: auto; border-radius: 8px; }
+.brand-logo-full { height: 46px; width: auto; display: block; }
 details.card summary { cursor: pointer; font-weight: 700; }
 details.card summary::-webkit-details-marker { color: var(--green-600); }
 details.card p { margin: .6rem 0 0; }
