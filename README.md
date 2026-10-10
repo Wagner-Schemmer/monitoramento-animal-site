@@ -1,78 +1,35 @@
-<div align="center">
+# 🏛️ PEÇA Nº 001 — DataBov (primeira versão)
 
-[![Stars](https://img.shields.io/github/stars/Wagner-Schemmer/monitoramento-animal-site?style=social)](https://github.com/Wagner-Schemmer/monitoramento-animal-site/stargazers)
-[![Live](https://img.shields.io/badge/demo-ao_vivo-22c55e?style=for-the-badge&logo=vercel&logoColor=white)](https://databov.vercel.app)
-[![Sucessor](https://img.shields.io/badge/sucessor-DataBov_v2-4ade80?style=flat-square&logo=vercel&logoColor=white)](https://databov-v2.vercel.app)
-![HTML](https://img.shields.io/badge/HTML-5-E34F26?style=flat-square&logo=html5&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-ES6-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
+> **Estado de conservação:** funcionando · **Visitação:** aberta · **Procedência:** o projeto que começou tudo
 
-  <a href="https://databov.vercel.app"><img alt="DataBov v1 — a versão original" src="docs/banner.svg" /></a>
+[![Visitar a peça](https://img.shields.io/badge/visitar_a_peça-ao_vivo-8b7355?style=for-the-badge&logo=vercel&logoColor=white)](https://databov.vercel.app)
 
-  <h1>DataBov · v1</h1>
+<a href="https://databov.vercel.app"><img src="docs/preview.png" alt="a peça em exposição" /></a>
 
-  <p>
-    <b>A versão original: landing + dashboard + backend IoT.</b>
-    <br />
-    Coleira inteligente com IA para Compost Barn e Freestall, índice de bem-estar de 1 a 5.
-  </p>
+## Ficha catalográfica
 
-  <p>
-    <a href="https://databov.vercel.app"><b>Demo</b></a> ·
-    <a href="https://databov-v2.vercel.app">Sucessor (v2)</a> ·
-    <a href="#o-que-cada-pagina-faz">Páginas</a> ·
-    <a href="#como-rodar">Como rodar</a> ·
-    <a href="#stack">Stack</a>
-  </p>
-</div>
-
-<a href="https://databov.vercel.app"><img src="docs/preview.png" alt="DataBov v1 ao vivo" /></a>
-
-> [!NOTE]
-> Este é o site original do projeto. A versão atualizada mora em [**databov-v2**](https://github.com/Wagner-Schemmer/databov-v2) ([databov-v2.vercel.app](https://databov-v2.vercel.app)).
-
-## O que cada página faz
-
-| Página | O que tem |
+| Campo | Registro |
 |---|---|
-| **Landing** | Hero, problema, solução, certificação, planos, specs, contato (11 seções de copy) |
-| **Dashboard** | Status do rebanho ao vivo (lê da API do backend) |
+| Título | DataBov — Bem-Estar Animal Monitorado e Certificado |
+| Período | 2026, fase Compost Barn / Freestall |
+| Técnica | HTML, CSS e JavaScript sobre telemetria MQTT |
+| Dimensões | 1 landing (11 seções) + 1 dashboard ao vivo |
+| Índice | Bem-estar certificável de 1 a 5 |
 
-## Como rodar
+## Linha do tempo
 
-1. `python3 -m http.server` na pasta (ou Go Live no VSCode).
-2. Para o formulário/contato: preencha as chaves do Supabase em `js/contact.js`.
-3. Com o backend rodando, o dashboard mostra telemetria real.
+- **2026 — esta peça:** landing de vendas + dashboard lendo a API do backend.
+- **2026 — sucessora:** [**DataBov v2**](https://github.com/Wagner-Schemmer/databov-v2) assume a exposição ([visita virtual](https://databov-v2.vercel.app)).
 
-## Estrutura
+## Restauração (rodar local)
 
-```
-monitoramento-animal-site/
-├── index.html          # landing (hero, problema, solução, certificação, planos, specs, contato)
-├── dashboard.html      # status do rebanho ao vivo (lê da API do backend)
-├── css/                # variables, components, style (identidade verde DataBov)
-├── js/main.js          # reveal + demo do acelerômetro
-├── js/dashboard.js     # telemetria e alertas da API
-├── js/contact.js       # form de contato -> Supabase (preencha as chaves)
-└── assets/             # databov-logo.png (logo), favicon
+```bash
+git clone https://github.com/Wagner-Schemmer/monitoramento-animal-site.git
+cd monitoramento-animal-site && python3 -m http.server
+# contato/supabase: chaves em js/contact.js · telemetria: ver rebanho-vivo-backend
 ```
 
-## Personalizar
-
-1. Chaves do Supabase em `js/contact.js`.
-2. Textos em `index.html` (seguem o documento de copy de 11 seções).
-3. Deploy: conectar o repo na Vercel (site estático, zero config).
-
-## Stack
-
-HTML · CSS · JavaScript. Backend em [`rebanho-vivo-backend`](https://github.com/Wagner-Schemmer/rebanho-vivo-backend).
-
-## Quem faz
-
-<a href="https://github.com/Wagner-Schemmer/monitoramento-animal-site/graphs/contributors"><img src="https://contrib.rocks/image?repo=Wagner-Schemmer/monitoramento-animal-site" alt="contribuidores" /></a>
-
-## Star history
-
-<a href="https://www.star-history.com/#Wagner-Schemmer/monitoramento-animal-site&Date"><img alt="Star History" src="https://api.star-history.com/svg?repos=Wagner-Schemmer/monitoramento-animal-site&type=Date" /></a>
+Salas do acervo: `index.html` · `dashboard.html` · `css/` · `js/` · `assets/`.
 
 ---
-Feito por [Wagner Schemmer](https://wagner-port.vercel.app) · [Portfólio](https://wagner-port.vercel.app) · [LinkedIn](https://www.linkedin.com/in/wagner-schemmer-martins-46950627a)
+Curadoria: [Wagner Schemmer](https://wagner-port.vercel.app) · [Portfólio](https://wagner-port.vercel.app)
