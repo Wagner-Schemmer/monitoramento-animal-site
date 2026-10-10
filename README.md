@@ -24,3 +24,8 @@ Textos em `index.html` seguem o documento `databov_conteudo_pagina_vendas.pdf` (
 
 ## Backend
 Ver `rebanho-vivo-backend/` (API MQTT + TimescaleDB + firmware ESP8266).
+
+## Personalizar
+1. Chaves do Supabase em `js/contact.js`
+2. Textos e preços em `index.html`
+3. Deploy: conectar o repo na Vercel (site estático, zero config)
