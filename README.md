@@ -1,5 +1,8 @@
 # DataBov — Bem-Estar Animal Monitorado e Certificado
 
+[![Live](https://img.shields.io/badge/demo-ao_vivo-4ade80?style=for-the-badge&logo=vercel&logoColor=white)](https://databov.vercel.app)
+[![v2](https://img.shields.io/badge/sucessor-DataBov_v2-22c55e?style=flat-square&logo=vercel&logoColor=white)](https://databov-v2.vercel.app)
+
 Landing page de vendas + dashboard do sistema DataBov: coleira inteligente com IA para Compost Barn e Freestall, com índice de bem-estar certificável de 1 a 5.
 
 ```
