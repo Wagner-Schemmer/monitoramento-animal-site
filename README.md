@@ -39,5 +39,9 @@ cd monitoramento-animal-site && python3 -m http.server
 
 Salas do acervo: `index.html` · `dashboard.html` · `css/` · `js/` · `assets/`.
 
+## Livro de visitas (star history)
+
+<a href="https://www.star-history.com/#Wagner-Schemmer/monitoramento-animal-site&Date"><img alt="Star History" src="https://api.star-history.com/svg?repos=Wagner-Schemmer/monitoramento-animal-site&type=Date" /></a>
+
 ---
 Curadoria: [Wagner Schemmer](https://wagner-port.vercel.app) · [Portfólio](https://wagner-port.vercel.app)
