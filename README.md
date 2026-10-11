@@ -6,6 +6,14 @@
 
 <a href="https://databov.vercel.app"><img src="docs/preview.png" alt="a peça em exposição" /></a>
 
+## Galeria da peça 🖼️
+
+**Sala 1 — o herói (hero + números):**
+<a href="https://databov.vercel.app"><img src="docs/dbv1-heroi.png" alt="hero da v1" /></a>
+
+**Sala 2 — o problema (avaliação pontual e subjetiva):**
+<a href="https://databov.vercel.app"><img src="docs/dbv1-problema.png" alt="seção do problema" /></a>
+
 ## Ficha catalográfica
 
 | Campo | Registro |
